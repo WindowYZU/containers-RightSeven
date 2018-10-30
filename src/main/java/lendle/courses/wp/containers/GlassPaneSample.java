@@ -8,6 +8,7 @@ package lendle.courses.wp.containers;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import javax.swing.JButton;
@@ -46,7 +47,7 @@ public class GlassPaneSample {
         //3. e.consume
         
         panel.setVisible(true);
-        panel.addMouseListener(new MouseListener() {
+        panel.addMouseListener(new MouseAdapter() {
             @Override
             public void mousePressed(MouseEvent e) {
                 e.consume();
